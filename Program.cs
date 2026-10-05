@@ -127,13 +127,23 @@
 // bool isEven = questionNumber % 2 == 0;
 // System.Console.WriteLine(isEven);
 
-int x = 0;
-System.Console.WriteLine($"{x++}");
-System.Console.WriteLine($"{x++}");
+
+
+// int x = 0;
+// System.Console.WriteLine($"{x++}");
+// System.Console.WriteLine($"{x++}");
+// // Этот метод выводит старое значение а потом уже изменяет первоначальное значение т.е во второй строчке будет 1
+// int x2 = 0;
+// System.Console.WriteLine($"{++x2}");
+// System.Console.WriteLine($"{++x2}");
 // Этот метод прибавляет и выводит уже измененное значение т.е во второй строчке будет 2
 
-int x2 = 0;
-System.Console.WriteLine($"{++x2}");
-System.Console.WriteLine($"{++x2}");
-// Этот метод выводит старое значение а потом уже изменяет первоначальное значение т.е во второй строчке будет 1
-
+System.Console.WriteLine("Введите сумму");
+double buySumm = double.Parse(Console.ReadLine());
+System.Console.WriteLine("Есть ли карта постоянного клиента: 1 - да, 0 - нет");
+int a = int.Parse(Console.ReadLine());
+bool y = a == 1;
+System.Console.WriteLine("Введите количество своих товаров");
+int colvo = int.Parse(Console.ReadLine());
+bool eligilbleForDiscount = (buySumm >= 3000 && colvo >= 3) || y == true;
+System.Console.WriteLine(eligilbleForDiscount);
