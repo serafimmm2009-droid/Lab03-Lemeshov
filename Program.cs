@@ -122,7 +122,18 @@
 
 
 
-System.Console.WriteLine("Введите целое число");
-int questionNumber = int.Parse(Console.ReadLine());
-bool isEven = questionNumber % 2 == 0;
-System.Console.WriteLine(isEven);
+// System.Console.WriteLine("Введите целое число");
+// int questionNumber = int.Parse(Console.ReadLine());
+// bool isEven = questionNumber % 2 == 0;
+// System.Console.WriteLine(isEven);
+
+int x = 0;
+System.Console.WriteLine($"{x++}");
+System.Console.WriteLine($"{x++}");
+// Этот метод прибавляет и выводит уже измененное значение т.е во второй строчке будет 2
+
+int x2 = 0;
+System.Console.WriteLine($"{++x2}");
+System.Console.WriteLine($"{++x2}");
+// Этот метод выводит старое значение а потом уже изменяет первоначальное значение т.е во второй строчке будет 1
+
